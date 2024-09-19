@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Overview Section */
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Filters */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+/* Form */
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* Entries List */
+.entries-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.entries-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entries-list button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.entries-list button:hover {
+    text-decoration: underline;
+}
+
+.text-red-500 {
+    color: #dc3545;
+}
+
+.text-green-500 {
+    color: #28a745;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Income Expense Calculator</h1>
+
+        <!-- Overview Section -->
+        <div class="overview">
+            <div class="total">
+                <h2>Total Income: <span id="total-income">$0.00</span></h2>
+            </div>
+            <div class="total">
+                <h2>Total Expense: <span id="total-expense">$0.00</span></h2>
+            </div>
+            <div class="total">
+                <h2>Net Balance: <span id="net-balance">$0.00</span></h2>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="income"> Income</label>
+            <label><input type="radio" name="filter" value="expense"> Expense</label>
+        </div>
+
+        <!-- Form for Adding Entries -->
+        <div class="form">
+            <select id="type" class="input-field">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="text" id="description" class="input-field" placeholder="Description">
+            <input type="number" id="amount" class="input-field" placeholder="Amount">
+            <button id="add-btn" class="add-button">Add</button>
+        </div>
+
+        <!-- Entries List -->
+        <ul id="entries-list" class="entries-list"></ul>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
